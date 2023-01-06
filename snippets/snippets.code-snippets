@@ -1,0 +1,144 @@
+{
+  "Vue file base": {
+    "scope": "vue",
+    "prefix": "vbase",
+    "body": [
+      "<script>",
+      "export default {",
+      "\t$0",
+      "};",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div>",
+      "\t\t",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style scoped lang=\"scss\">",
+      "\t",
+      "</style>"
+    ],
+    "description": "Vue 2 file base"
+  },
+
+  "Vue props": {
+    "scope": "javascript",
+    "prefix": "vprops",
+    "body": [
+      "props: {\n\t${1:name}: {\n\t\ttype: ${2:type},\n\t\tdefault: ${3:value},\n\t},\n},"
+    ],
+    "description": "Vue 2 props"
+  },
+
+  "Vue data": {
+    "scope": "javascript",
+    "prefix": "vdata",
+    "body": ["data() {\n\treturn {\n\t\t${1:name}: ${2:value},\n\t};\n},"],
+    "description": "Vue 2 data"
+  },
+
+  "Vue computed": {
+    "scope": "javascript",
+    "prefix": "vcomputed",
+    "body": ["computed: {\n\t${1:name}() {\n\t\treturn ${2:value};\n\t},\n},"],
+    "description": "Vue 2 computed"
+  },
+
+  "Vue method": {
+    "scope": "javascript",
+    "prefix": "vmethod",
+    "body": ["methods: {\n\t${1:name}() {\n\t\treturn ${2:value};\n\t},\n},"],
+    "description": "Vue 2 method"
+  },
+
+  "Vue component with props": {
+    "scope": "html",
+    "prefix": "vel-props",
+    "body": ["<${1:component} :${2:prop}=\"${3:value}\">\n\t$4\n</$1>"],
+    "description": "Vue component with props"
+  },
+
+  "Vue v-for": {
+    "scope": "html",
+    "prefix": "vfor",
+    "body": ["v-for=\"${1:item} in ${2:array}\" :key=\"${3:$1.id}\""],
+    "description": "Vue v-for"
+  },
+
+  "Vue v-for (with index)": {
+    "scope": "html",
+    "prefix": "vfor-index",
+    "body": [
+      "v-for=\"(${1:item}, index) in ${2:array}\" :key=\"${3:`$1-\\${index}}`\""
+    ],
+    "description": "Vue v-for (with index)"
+  },
+
+  "Vue v-on click handler": {
+    "scope": "html",
+    "prefix": "von",
+    "body": ["@click=\"${1:method}\""],
+    "description": "Vue v-on"
+  },
+
+  "Vue v-on click handler (with argument)": {
+    "scope": "html",
+    "prefix": "von-arg",
+    "body": ["@click=\"${1:method}(${2:arg})\""],
+    "description": "Vue v-on (With argument)"
+  },
+
+  "Vue v-on click handler (with arguments)": {
+    "scope": "html",
+    "prefix": "von-args",
+    "body": ["@click=\"${1:method}(${2:arg1}, ${3:\\$event})\""],
+    "description": "Vue v-on (With arguments)"
+  },
+
+  "Vue class binding": {
+    "scope": "html",
+    "prefix": "vclass",
+    "body": [":class=\"{\n\t${1:className}: ${2:condition}\n}\""],
+    "description": "Vue class binding"
+  },
+
+  "Vue class binding (object)": {
+    "scope": "html",
+    "prefix": "vclass-obj",
+    "body": [":class=\"[\n\t${1:classObject}\n]\""],
+    "description": "Vue class binding (object)"
+  },
+
+  "Vue class binding (multiple)": {
+    "scope": "html",
+    "prefix": "vclass-mult",
+    "body": [
+      ":class=\"[\n\t${1:classObject}, { ${2:className}: ${3:classCondition} }\n]\""
+    ],
+    "description": "Vue class binding (multiple)"
+  },
+
+  "Vue inline style binding": {
+    "scope": "html",
+    "prefix": "vstyle",
+    "body": [":style=\"{\n\t${1:propertyName}: ${2:propertyValue}\n}\""],
+    "description": "Vue inline style binding"
+  },
+
+  "Vue inline style binding (object)": {
+    "scope": "html",
+    "prefix": "vstyle-obj",
+    "body": [":style=\"[\n\t${1:styleObject}\n]\""],
+    "description": "Vue inline style binding (object)"
+  },
+
+  "Vue inline style binding (multiple)": {
+    "scope": "html",
+    "prefix": "vstyle-mult",
+    "body": [
+      ":style=\"[\n\t${1:styleObject}, { ${2:propertyName}: ${3:propertyValue} }\n]\""
+    ],
+    "description": "Vue inline style binding (multiple)"
+  }
+}
