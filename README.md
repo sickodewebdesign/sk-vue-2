@@ -1,4 +1,4 @@
-# **Sic Kode Web Design** Vue 2 Extension Pack
+# **Sic Kode** Vue 2 Extension Pack
 
 ## Extensions
 
