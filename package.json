@@ -1,7 +1,7 @@
 {
   "name": "sk-vue-2",
   "displayName": "SK Vue 2",
-  "description": "Sic Kode Web Design Vue 2 Extension Pack",
+  "description": "Sic Kode Vue 2 Extension Pack",
   "icon": "icon.png",
   "galleryBanner": {
     "color": "#3B82F6",
@@ -11,9 +11,9 @@
     "name": "Sergiu Waxmann",
     "email": "sergiu@sickode.com"
   },
-  "publisher": "sickodewebdesign",
+  "publisher": "sickode",
   "repository": "https://github.com/sickodewebdesign/sk-vue-2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "engines": {
     "vscode": "^1.70.0"
@@ -26,6 +26,10 @@
     "Sic Kode",
     "Sic Kode Web Design",
     "SK Vue 2",
+    "Sic Kode Vue 2",
+    "Sic Kode Web Design Vue 2",
+    "SK Vue 2 Extension Pack",
+    "Sic Kode Vue 2 Extension Pack",
     "Sic Kode Web Design Vue 2 Extension Pack"
   ],
   "extensionPack": [
